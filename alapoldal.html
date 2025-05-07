@@ -1,54 +1,201 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tészták-Tésztája</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tészták-Tésztája</title>
+  <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #121212;
+        color: #e0e0e0;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+    }
+
+    header {
+        background: linear-gradient(to right, #3a0ca3, #7209b7);
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+
+    .menu {
+        max-width: 960px;
+        margin: 50px auto;
+        padding: 0 20px;
+    }
+
+    .menu h2 {
+        color: #ffb703;
+        border-bottom: 2px solid #2c2c2c;
+        padding-bottom: 6px;
+        margin-top: 40px;
+        font-size: 1.8rem;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    .menu li {
+        background: #1e1e1e;
+        margin-bottom: 12px;
+        padding: 14px 20px;
+        border-left: 5px solid #ffb703;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+    }
+
+    .menu li:hover {
+        background-color: #2a2a2a;
+    }
+
+    .menu li strong {
+        flex: 1;
+        font-size: 1.1rem;
+        color: #fafafa;
+    }
+
+    .menu li span {
+        font-weight: bold;
+        color: #ffd166;
+        white-space: nowrap;
+        font-size: 1.05rem;
+    }
+
+    footer {
+        background-color: #1a1a1a;
+        color: #bbbbbb;
+        text-align: center;
+        padding: 25px;
+        font-size: 1rem;
+        border-top: 1px solid #333;
+        margin-top: 60px;
+    }
+
+    footer p {
+        margin: 0;
+        font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+        header h1 {
+            font-size: 2rem;
+        }
+
+        .menu h2 {
+            font-size: 1.5rem;
+        }
+
+        .menu li {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .menu li span {
+            margin-top: 6px;
+            font-size: 1rem;
+        }
+
+        footer {
+            font-size: 0.9rem;
+            padding: 20px 10px;
+        }
+    }
+
+    .bottom-section {
+        background-color: #0f0f0f;
+        text-align: center;
+        padding: 40px 20px;
+        color: #dddddd;
+        border-top: 1px solid #333;
+    }
+
+    .bottom-section h2 {
+        font-size: 2rem;
+        color: #ffb703;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .bottom-section p {
+        font-size: 1.2rem;
+        color: #aaaaaa;
+        margin: 0;
+        font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+        .bottom-section h2 {
+            font-size: 1.5rem;
+        }
+
+        .bottom-section p {
+            font-size: 1rem;
+        }
+    }
+
+    a:nth-of-type(2) {
+        display: none;
+    }
+  </style>
 </head>
 <body>
-<<<<<<< Updated upstream
-
 <header>
-<h1>Tészták-Tésztája</h1>
+  <h1>Tészták-Tésztája</h1>
 </header>
 
 <section class="menu">
-<h2>Pizza</h2>
-<ul>
-<li><strong>Margareta</strong> .......................<span>1 600 Ft</span></li>
-<li><strong>Sonkás kukoricás</strong> .......... <span>1 600 Ft</span></li>
-<li><strong>Gombás</strong>...........................<span>1 800 Ft</span></li>
-<li><strong>Magyaros</strong>........................ <span>2 200 Ft</span></li>
-</ul>
+  <h2>Pizza</h2>
+  <ul>
+    <li><strong>Margareta</strong> <span>1 600 Ft</span></li>
+    <li><strong>Sonkás kukoricás</strong> <span>1 600 Ft</span></li>
+    <li><strong>Gombás</strong> <span>1 800 Ft</span></li>
+    <li><strong>Magyaros</strong> <span>2 200 Ft</span></li>
+  </ul>
 
-<h2>Tészta ételek </h2>
-<ul>
-<li><strong>Bolognai spagetti</strong> ....................... <span>2 600 Ft</span></li>
-<li><strong>Milánói sertésszűz</strong> ..................... <span>2 800 Ft</span></li>
-<li><strong>Juh túrós sztrapacska</strong> ............... <span>1 900 Ft</span></li>
-<li><strong>Túrós csusza tepertővel</strong> ............. <span>1 800 Ft</span></li>
-<li><strong>Carbonara spagetti</strong> .................... <span>2 800 Ft</span></li>
-</ul>
+  <h2>Tészta ételek </h2>
+  <ul>
+    <li><strong>Bolognai spagetti</strong> <span>2 600 Ft</span></li>
+    <li><strong>Milánói sertésszűz</strong> <span>2 800 Ft</span></li>
+    <li><strong>Juh túrós sztrapacska</strong> <span>1 900 Ft</span></li>
+    <li><strong>Túrós csusza tepertővel</strong> <span>1 800 Ft</span></li>
+    <li><strong>Carbonara spagetti</strong> <span>2 800 Ft</span></li>
+  </ul>
 
-<h2>Italok </h2>
-<ul>
-<li><strong>Coca-Cola</strong>........ <span>500 Ft</span></li>
-<li><strong>Fanta</strong> ................ <span>500 Ft</span></li>
-<li><strong>Fuzetea</strong>.............. <span>500 Ft</span></li>
-<li><strong>Házi limonádé</strong>... <span>800 Ft</span></li>
-<li><strong>Naturaqua víz </strong>.. <span>350 Ft</span></li>
-</ul>
+  <h2>Italok </h2>
+  <ul>
+    <li><strong>Coca-Cola</strong> <span>500 Ft</span></li>
+    <li><strong>Fanta</strong> <span>500 Ft</span></li>
+    <li><strong>Fuzetea</strong> <span>500 Ft</span></li>
+    <li><strong>Házi limonádé</strong> <span>800 Ft</span></li>
+    <li><strong>Naturaqua víz </strong> <span>350 Ft</span></li>
+  </ul>
 </section>
 
 <footer>
-<p>Az árak magyar forintban értendők!</p>
+  <p>Az árak magyar forintban értendők!</p>
 </footer>
 
-=======
-    <h1>Tészták-Tésztája</h1>
-    <h2>Menü</h2>
-    
->>>>>>> Stashed changes
+<section class="bottom-section">
+  <h2>Tészták-Tésztája</h2>
+  <p>Menü</p>
+</section>
+
 </body>
 </html>
